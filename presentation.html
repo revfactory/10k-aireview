@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10K 해커톤 AI 심사 시스템 구축기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation -->
+        <nav class="nav-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+            <span class="dot" data-slide="5"></span>
+            <span class="dot" data-slide="6"></span>
+            <span class="dot" data-slide="7"></span>
+            <span class="dot" data-slide="8"></span>
+            <span class="dot" data-slide="9"></span>
+            <span class="dot" data-slide="10"></span>
+            <span class="dot" data-slide="11"></span>
+        </nav>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <!-- Slides -->
+        <div class="slides-wrapper">
+            <!-- Title Slide -->
+            <section class="slide active" id="slide-0">
+                <div class="slide-content">
+                    <div class="title-wrapper">
+                        <h1 class="main-title">
+                            <span class="emoji">🤖</span>
+                            <span>바이브 코딩으로<br>
+                            48시간 만에 구축한<br>
+                            <span class="highlight">AI 심사 시스템</span></span>
+                        </h1>
+                        <p class="subtitle">250명 규모 10K 해커톤 프로젝트</p>
+                    </div>
+                    <div class="bottom-info">
+                        <p class="event-info">카카오 AI 캠퍼스 | 10K 해커톤</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1: Introduction -->
+            <section class="slide" id="slide-1">
+                <div class="slide-content">
+                    <h2 class="slide-title">프로젝트 배경</h2>
+                    <div class="content-grid">
+                        <div class="card">
+                            <h3>10K 해커톤</h3>
+                            <ul>
+                                <li>전통적인 무박 2일 → <span class="highlight">10시간</span></li>
+                                <li>AI 도구 적극 활용</li>
+                                <li>'바이브 코딩' 중심</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>시작의 계기</h3>
+                            <p class="quote">"심사도 AI로 해야 하지 않을까요?"</p>
+                            <p class="quote">"Gemini로 시연 영상 심사도 가능할 것 같은데요?"</p>
+                            <p class="emoji-text">😅 덜컥 담당자가 되어버림</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2: D-30 Journey Begins -->
+            <section class="slide" id="slide-2">
+                <div class="slide-content">
+                    <h2 class="slide-title">D-30: 여정의 시작</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">D-30</div>
+                            <div class="timeline-content">
+                                <h3>v0로 프로토타입 제작</h3>
+                                <p>"AI로 하니 정말 뚝딱이네!"</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">D-14</div>
+                            <div class="timeline-content">
+                                <h3>심사 프로세스 논의</h3>
+                                <p>회의록 → Gemini → <span class="highlight">기획서 v1.0 완성</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-placeholder">
+                        <img src="기획서.png" alt="심사 웹사이트 기획서 v1.0" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: UI/UX Design -->
+            <section class="slide" id="slide-3">
+                <div class="slide-content">
+                    <h2 class="slide-title">화면 설계 단계</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">시간</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">14</div>
+                            <div class="stat-label">페이지</div>
+                        </div>
+                    </div>
+                    <div class="feature-list">
+                        <div class="feature-item">✓ 로그인</div>
+                        <div class="feature-item">✓ 결과 제출</div>
+                        <div class="feature-item">✓ 팀 대시보드</div>
+                        <div class="feature-item">✓ 동료 평가</div>
+                        <div class="feature-item">✓ 최종 결과</div>
+                    </div>
+                    <div class="screenshot-placeholder image-carousel">
+                        <div class="carousel-container">
+                            <img src="화면설계.png" alt="v0로 구현된 화면 1" class="carousel-image active">
+                            <img src="화면설계2.png" alt="v0로 구현된 화면 2" class="carousel-image">
+                            <img src="화면설계3.png" alt="v0로 구현된 화면 3" class="carousel-image">
+                            <img src="화면설계4.png" alt="v0로 구현된 화면 4" class="carousel-image">
+                            <img src="화면설계5.png" alt="v0로 구현된 화면 5" class="carousel-image">
+                            <img src="화면설계6.png" alt="v0로 구현된 화면 6" class="carousel-image">
+                            <img src="화면설계7.png" alt="v0로 구현된 화면 7" class="carousel-image">
+                            <img src="화면설계8.png" alt="v0로 구현된 화면 8" class="carousel-image">
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-index="0"></span>
+                            <span class="indicator" data-index="1"></span>
+                            <span class="indicator" data-index="2"></span>
+                            <span class="indicator" data-index="3"></span>
+                            <span class="indicator" data-index="4"></span>
+                            <span class="indicator" data-index="5"></span>
+                            <span class="indicator" data-index="6"></span>
+                            <span class="indicator" data-index="7"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: D-13 Development -->
+            <section class="slide" id="slide-4">
+                <div class="slide-content">
+                    <h2 class="slide-title">D-13: 본격 개발 시작</h2>
+                    <div class="dev-process">
+                        <div class="process-step">
+                            <div class="step-icon">🔍</div>
+                            <h3>Claude Code로 API 명세서 생성</h3>
+                            <p>Mock 데이터 기반 정확한 스펙 설계</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-icon">⚙️</div>
+                            <h3>백엔드 구축</h3>
+                            <p>Spring AI + Kotlin<br>OpenAI, Claude, Gemini 하이브리드</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-icon">🚀</div>
+                            <h3>10분 만에 구현</h3>
+                            <p>Controller, Service, Repository, Entity</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-placeholder">
+                        <img src="api.png" alt="Claude Code가 생성한 API 스펙 파일" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: D-5 Deployment Challenges -->
+            <section class="slide" id="slide-5">
+                <div class="slide-content">
+                    <h2 class="slide-title">D-5: 배포의 벽</h2>
+                    <div class="challenge-section">
+                        <div class="challenge-card error">
+                            <h3>🚫 구글 로그인 먹통</h3>
+                            <p>로드밸런서 환경에서 세션 유실</p>
+                        </div>
+                        <div class="challenge-card error">
+                            <h3>🔄 무한 로딩</h3>
+                            <p>k8s 프록시 설정 오류로 인한 타임아웃</p>
+                        </div>
+                        <div class="challenge-card success">
+                            <h3>✅ 해결</h3>
+                            <p>코드 한 줄 한 줄 분석 후 설정 수정</p>
+                        </div>
+                    </div>
+                    <p class="insight-text">"AI로 로그인 하나 구현 못 하나 싶었는데..."</p>
+                </div>
+            </section>
+
+            <!-- Slide 6: D-4 Major Refactoring -->
+            <section class="slide" id="slide-6">
+                <div class="slide-content">
+                    <h2 class="slide-title">D-4: 전면 개편</h2>
+                    <div class="refactor-content">
+                        <div class="problem-box">
+                            <h3>문제 발견</h3>
+                            <p class="quote">"그래서 행사 당일, 이 시스템을 어떻게 운영할 건데?"</p>
+                        </div>
+                        <div class="solution-grid">
+                            <div class="solution-item">
+                                <span class="icon">👥</span>
+                                <p>팀 관리</p>
+                            </div>
+                            <div class="solution-item">
+                                <span class="icon">📋</span>
+                                <p>제출물 관리</p>
+                            </div>
+                            <div class="solution-item">
+                                <span class="icon">🤖</span>
+                                <p>AI 심사 관리</p>
+                            </div>
+                            <div class="solution-item">
+                                <span class="icon">⭐</span>
+                                <p>동료 평가 관리</p>
+                            </div>
+                        </div>
+                        <div class="warning-box">
+                            <p>⚠️ 코드베이스 확장의 부작용</p>
+                            <p>AI가 기존 기능을 인식하지 못하고 중복 구현 시도</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7: D-Day Results -->
+            <section class="slide" id="slide-7">
+                <div class="slide-content">
+                    <h2 class="slide-title">D-Day: 예상치 못한 변수들</h2>
+                    <div class="issues-grid">
+                        <div class="issue-card">
+                            <h3>1차 심사</h3>
+                            <p class="success">✓ 순조롭게 진행</p>
+                            <p class="warning">△ 점수가 심사평의 깊이를 반영하지 못함</p>
+                        </div>
+                        <div class="issue-card">
+                            <h3>2차 심사 - Gemini 영상 분석</h3>
+                            <div class="issue-list">
+                                <div class="issue-item error">
+                                    <strong>문제 1:</strong> 광고 영상에 90점 부여
+                                    <p>→ 프롬프트 수정으로 해결</p>
+                                </div>
+                                <div class="issue-item error">
+                                    <strong>문제 2:</strong> 숏츠 영상 분석 불가
+                                    <p>→ 일부 팀 재등록 실패 😢</p>
+                                </div>
+                                <div class="issue-item error">
+                                    <strong>문제 3:</strong> 할루시네이션
+                                    <p>→ 재심사로 해결</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Peer Evaluation -->
+            <section class="slide" id="slide-8">
+                <div class="slide-content">
+                    <h2 class="slide-title">동료 평가 시스템</h2>
+                    <div class="evaluation-stats">
+                        <div class="big-stat">
+                            <div class="number">250</div>
+                            <div class="label">참가자</div>
+                        </div>
+                        <div class="big-stat">
+                            <div class="number">1,200</div>
+                            <div class="label">평가 데이터</div>
+                        </div>
+                        <div class="big-stat">
+                            <div class="number">5</div>
+                            <div class="label">평가 라운드</div>
+                        </div>
+                    </div>
+                    <div class="method-box">
+                        <h3>ELO Rating 시스템</h3>
+                        <p>무작위 2팀씩 비교 평가</p>
+                    </div>
+                    <div class="screenshot-placeholder">
+                        <img src="peer.png" alt="ELO Rating 결과" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 9: Final Results -->
+            <section class="slide" id="slide-9">
+                <div class="slide-content">
+                    <h2 class="slide-title">최종 결과</h2>
+                    <div class="tab-container">
+                        <div class="tab-buttons">
+                            <button class="tab-button active" data-tab="final-result">🏆 최종 집계</button>
+                            <button class="tab-button" data-tab="dev-time">⏱️ 총 개발 시간</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="final-result">
+                                <div class="result-card">
+                                    <h3>최종 선정 팀</h3>
+                                    <div class="big-number">7</div>
+                                    <p>팀</p>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <img src="final.png" alt="최종 점수 집계" style="max-width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="dev-time">
+                                <div class="result-card">
+                                    <h3>Claude Code 분석 결과</h3>
+                                    <div class="big-number">48</div>
+                                    <p>시간</p>
+                                </div>
+                                <div class="screenshot-placeholder">
+                                    <img src="log.png" alt="개발 시간 로그" style="max-width: 100%; height: auto; border-radius: 8px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 10: Key Learnings -->
+            <section class="slide" id="slide-10">
+                <div class="slide-content">
+                    <h2 class="slide-title">핵심 교훈</h2>
+                    <div class="lessons-learned">
+                        <div class="lesson-card">
+                            <div class="lesson-icon">💡</div>
+                            <h3>바이브 코딩의 힘</h3>
+                            <p>누구나 쉽게 개발을 시작할 수 있는 강력한 도구</p>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-icon">⚖️</div>
+                            <h3>균형의 중요성</h3>
+                            <p>안정적인 시스템 구축에는 여전히 개발자의 경험과 통찰력 필수</p>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-icon">🎯</div>
+                            <h3>명확한 지시</h3>
+                            <p>코드베이스가 커질수록 상세하고 명확한 지시가 중요</p>
+                        </div>
+                    </div>
+                    <p class="conclusion">"AI의 도움이 없었다면 이 모든 것은 불가능했을 겁니다"</p>
+                </div>
+            </section>
+
+            <!-- Thank You Slide -->
+            <section class="slide" id="slide-11">
+                <div class="slide-content">
+                    <div class="thank-you">
+                        <h1>감사합니다</h1>
+                        <p class="subtitle">AI와 함께한 48시간의 여정</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">v0</span>
+                            <span class="tech-item">Claude Code</span>
+                            <span class="tech-item">Gemini</span>
+                            <span class="tech-item">Spring AI</span>
+                            <span class="tech-item">Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <button class="control-btn prev" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="control-btn next" id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Slide Counter -->
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">12</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
